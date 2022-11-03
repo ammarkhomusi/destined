@@ -49,4 +49,4 @@ Have you ever wanted to take a vacation or trip but don't know where to go or an
 | Get Random Destination           | GET     | /destinations                  |     201 |
 
 ## Credit
-Created and built by [Ammar Khomusi](https://github.com/AmmarKhomusi) - Full Stack Developers <br>
+Created and built by [Ammar Khomusi](https://github.com/AmmarKhomusi) - Full Stack Developer <br>
