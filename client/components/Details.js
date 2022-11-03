@@ -7,20 +7,33 @@ import {
   Image,
   Dimensions,
   TouchableOpacity,
+  Linking,
+  Alert,
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { Header } from "@react-navigation/stack";
 
 const destinationImage = require("../assets/images/newyork2.jpg");
 
-const Details = () => {
+const url1 = "https://www.expedia.com/";
+
+const Details = ({ navigation }) => {
+  const openUrl = async (url) => {
+    const isSupported = await Linking.canOpenURL(url);
+    if (isSupported) {
+      await Linking.openURL(url);
+    } else {
+      Alert.alert(`Cannot Open URL: ${url}`);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <ImageBackground
         source={destinationImage}
         style={styles.destinationPicture}
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.push("Home")}>
           <Image
             style={styles.back}
             source={require("../assets/images/back.png")}
@@ -70,7 +83,9 @@ const Details = () => {
           </View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => alert("You booked a trip!")}
+            onPress={() => {
+              openUrl(url1);
+            }}
           >
             <Text style={styles.buttonText}>Book Now</Text>
           </TouchableOpacity>
