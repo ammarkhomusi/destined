@@ -1,62 +1,52 @@
-# Project Title
+# Destined
 
-Simple overview of use/purpose.
+Have you ever wanted to take a vacation or trip but don't know where to go or and are overwhelmed with options. Destined helps with solving that problem. You will be asked a few questions and based on your answers, an ideal destination will be picked for you! So where are you **DESTINED**?
 
-## Description
+![ad](readmeAssets/ad.jpg)
 
-An in-depth paragraph about your project and overview of use.
+## Tech Stack
+### Frontend
+- React Native with Axios 
+- Expo
+- Typescript
+- CSS
+- Figma
+### Backend
+- Node.js with Express.js for the Server
+- Firebase for user authentication
+- MongoDB and Mongoose as the Database
 
 ## Getting Started
+- Choose an emulator such as **Expo Go**
+- Download and setup Expo (or other emulator) on your phone
+### Client
+- Change directory into client folder
+- To install dependencies, run:
+```npm install```
+- After dependencies have been installed, start the client:
+```npm start```
+- If you've chosen Expo, take a picture of the QR code with your phone and click the link
+- This should automatically load the app on your phone
+### Server
+- Change directory into server folder
+- Following the example in .env.example, add your credentials to your .env file
+- To install the backend dependencies, run:
+```npm install```
+- Start the server:
+```nodemon```
+### Database
+- Choose your ODM such as **MongoDB Compass**
+- Set up your account and add your credentials to the .env file
 
-### Dependencies
+## API Endpoints
 
-- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-- ex. Windows 10
+| API                              | Method  | Endpoint                 |  Status |
+| :------------------------------  | :------ | :----------------------- | ------: |
+| 🙋‍♀️ Users                         |
+| Register New User                | POST    | /register                      |     201 |
+| User Login                       | POST    | /login                         |     200 |
+| 📝 Destinations                  |
+| Get Random Destination           | GET     | /destinations                  |     201 |
 
-### Installing
-
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
-### Executing program
-
-- How to run the program
-- Step-by-step bullets
-
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-- 0.1
-  - Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-
-- [awesome-readme](https://github.com/matiassingers/awesome-readme)
-- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [dbader](https://github.com/dbader/readme-template)
-- [zenorocha](https://gist.github.com/zenorocha/4526327)
-- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+## Credit
+Created and built by [Ammar Khomusi](https://github.com/AmmarKhomusi) - Full Stack Developers <br>
